@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vāk as the Ground of Psychological Awareness · Series B · Part One · Cultural Musings</title>
+<style>
+:root{
+  --bg:#0c0a08;
+  --bg-paper:#13100d;
+  --bg-card:#181410;
+  --ink:#ece3d4;
+  --ink-dim:#b8ad9a;
+  --ink-faint:#7d7263;
+  --accent:#c9933f;
+  --accent-soft:#8a6a3a;
+  --accent-deep:#5e3f1f;
+  --rule:#2c241c;
+  --sanskrit:#e0b873;
+  --serif:'Tinos','Georgia','Times New Roman',serif;
+  --display:'Spectral','Georgia',serif;
+  --max:780px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:18px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-deep);}
+a:hover{color:var(--sanskrit);border-bottom-color:var(--accent);}
+
+header.masthead{
+  text-align:center;
+  padding:64px 24px 40px;
+  border-bottom:1px solid var(--rule);
+  background:radial-gradient(ellipse at top, #1b150e 0%, var(--bg) 70%);
+}
+.brand{
+  letter-spacing:.22em;
+  font-size:13px;
+  color:var(--ink-faint);
+  text-transform:uppercase;
+}
+.platform-sub{
+  font-size:13px;
+  color:var(--ink-faint);
+  margin-top:4px;
+}
+.series-tag{
+  margin-top:28px;
+  font-size:14px;
+  color:var(--accent);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.devanagari-strip{
+  font-size:15px;
+  color:var(--sanskrit);
+  margin-top:10px;
+  letter-spacing:.04em;
+}
+
+nav.toc{
+  max-width:var(--max);
+  margin:36px auto 0;
+  padding:0 24px;
+  text-align:center;
+  font-size:14px;
+  line-height:2.1;
+}
+nav.toc a{margin:0 10px;color:var(--ink-dim);border-bottom:1px dotted var(--accent-deep);}
+nav.toc a:hover{color:var(--sanskrit);}
+
+nav.allparts{
+  max-width:var(--max);
+  margin:18px auto 0;
+  padding:18px 24px 0;
+  border-top:1px solid var(--rule);
+  text-align:center;
+  font-size:13.5px;
+  color:var(--ink-faint);
+  line-height:1.9;
+}
+nav.allparts .current{color:var(--accent);font-weight:600;}
+nav.allparts a{color:var(--ink-dim);border-bottom:1px dotted var(--rule);}
+
+main{max-width:var(--max);margin:0 auto;padding:0 24px 80px;}
+
+.title-block{padding:56px 0 24px;text-align:center;}
+.title-block .kicker{
+  font-size:14px;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:18px;
+}
+.title-block h1{
+  font-family:var(--display);
+  font-size:42px;
+  line-height:1.18;
+  font-weight:600;
+  margin:0 0 18px;
+  color:#f4ead8;
+}
+.title-block h2.subtitle{
+  font-family:var(--serif);
+  font-style:italic;
+  font-weight:400;
+  font-size:21px;
+  color:var(--ink-dim);
+  margin:0 0 30px;
+  line-height:1.5;
+}
+.meta-grid{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:28px;
+  font-size:14px;color:var(--ink-faint);margin-top:18px;
+}
+.meta-grid b{color:var(--ink-dim);font-weight:600;}
+
+.ornament{text-align:center;color:var(--accent-soft);font-size:20px;margin:40px 0;letter-spacing:.4em;}
+
+section.context-box, section.preview-box{
+  background:var(--bg-card);
+  border:1px solid var(--rule);
+  border-radius:4px;
+  padding:32px 32px;
+  margin:32px 0;
+}
+section.context-box h3, section.preview-box h3{
+  font-family:var(--display);
+  color:var(--sanskrit);
+  font-size:20px;
+  margin-top:0;
+}
+section.context-box h4, section.preview-box h4{
+  font-size:16px;color:var(--ink-dim);margin:24px 0 8px;text-transform:uppercase;letter-spacing:.06em;
+}
+
+table.partmap{
+  width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;
+}
+table.partmap th, table.partmap td{
+  border:1px solid var(--rule);padding:10px 12px;text-align:left;vertical-align:top;
+}
+table.partmap th{background:#1d170f;color:var(--accent);font-weight:600;}
+table.partmap tr:nth-child(even) td{background:#15110c;}
+table.partmap td.this-paper{color:var(--sanskrit);font-weight:600;}
+
+blockquote.pull{
+  margin:40px 0;
+  padding:24px 28px;
+  border-left:3px solid var(--accent);
+  background:linear-gradient(90deg, #1a140c, transparent);
+  font-style:italic;
+  font-size:18.5px;
+  color:#ddd0b8;
+}
+blockquote.pull .attrib{
+  display:block;text-align:right;font-style:normal;font-size:13px;color:var(--accent);
+  margin-top:12px;letter-spacing:.05em;text-transform:uppercase;
+}
+
+h1.sectionhead{
+  font-family:var(--display);
+  font-size:14px;
+  color:var(--accent);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin:64px 0 4px;
+  border-top:1px solid var(--rule);
+  padding-top:36px;
+}
+h1.sectionhead + h2.sectiontitle{margin-top:6px;}
+h2.sectiontitle{
+  font-family:var(--display);
+  font-size:30px;
+  line-height:1.25;
+  color:#f4ead8;
+  margin:0 0 28px;
+  font-weight:600;
+}
+h3{
+  font-family:var(--display);
+  font-size:21px;
+  color:var(--sanskrit);
+  margin:38px 0 14px;
+}
+p{margin:0 0 18px;color:var(--ink);}
+.dim{color:var(--ink-dim);}
+
+.sanskrit-block{
+  text-align:center;
+  font-size:21px;
+  color:var(--sanskrit);
+  line-height:1.9;
+  margin:30px 0;
+  padding:18px 0;
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+}
+.sanskrit-block .translit{
+  display:block;font-size:15px;font-style:italic;color:var(--ink-dim);margin-top:10px;font-family:var(--serif);
+}
+.sanskrit-block .gloss{
+  display:block;font-size:14.5px;color:var(--ink-faint);margin-top:8px;font-family:var(--serif);font-style:normal;
+}
+.cite-source{
+  text-align:center;font-size:13px;color:var(--ink-faint);margin-top:-22px;margin-bottom:30px;letter-spacing:.04em;
+}
+
+.vak-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:30px 0;
+}
+.vak-card{
+  background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:20px;
+}
+.vak-card.active{border-color:var(--accent-soft);background:#1c150c;}
+.vak-card .vc-sanskrit{font-family:var(--display);font-size:22px;color:var(--sanskrit);margin-bottom:4px;}
+.vak-card .vc-roman{font-size:13px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;}
+.vak-card .vc-label{font-weight:600;color:var(--ink);font-size:15px;margin-bottom:8px;}
+.vak-card p{font-size:14.5px;color:var(--ink-dim);margin-bottom:8px;}
+.vc-tag{font-size:12.5px;color:var(--accent);font-style:italic;}
+
+table.datatable{
+  width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;
+}
+table.datatable th,table.datatable td{
+  border:1px solid var(--rule);padding:10px 12px;text-align:left;vertical-align:top;
+}
+table.datatable th{background:#1d170f;color:var(--accent);}
+table.datatable tr:nth-child(even) td{background:#15110c;}
+table.datatable caption{
+  text-align:left;font-size:14px;color:var(--ink-faint);margin-bottom:10px;font-style:italic;
+}
+
+.divider-orn{text-align:center;color:var(--accent-deep);font-size:20px;margin:46px 0;letter-spacing:.5em;}
+
+footer.papertail{
+  text-align:center;padding:48px 24px 80px;border-top:1px solid var(--rule);margin-top:60px;
+}
+footer.papertail .om{font-size:24px;color:var(--accent);margin-bottom:14px;}
+footer.papertail .omtatsat{font-size:14px;color:var(--ink-faint);font-style:italic;margin-bottom:30px;}
+footer.papertail .stamp{font-size:13px;color:var(--ink-faint);line-height:1.9;}
+footer.papertail .stamp b{color:var(--ink-dim);}
+
+.footnotes{font-size:14.5px;color:var(--ink-dim);}
+.footnotes li{margin-bottom:14px;}
+.footnotes sup{color:var(--accent);}
+
+.glossterm{font-family:var(--display);color:var(--sanskrit);font-size:17px;}
+dl.glossary dt{margin-top:22px;}
+dl.glossary dd{color:var(--ink-dim);font-size:14.5px;margin:6px 0 0;}
+
+.skip-target{padding-top:8px;}
+
+@media (max-width:600px){
+  body{font-size:16.5px;}
+  .title-block h1{font-size:30px;}
+  .title-block h2.subtitle{font-size:18px;}
+  h2.sectiontitle{font-size:24px;}
+  nav.toc a{margin:0 6px;display:inline-block;}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="brand">Cultural Musings</div>
+  <div class="platform-sub">Vedic &amp; Śāstric Research Platform</div>
+  <div class="series-tag">Series B · Part One of Twelve</div>
+  <div class="devanagari-strip">वाक् · चित्त · मनोविज्ञानम् · शब्दभेदः</div>
+
+  <nav class="toc" aria-label="This paper">
+    <a href="#series-context">Series Context</a>
+    <a href="#abstract">Abstract</a>
+    <a href="#sec-1">I. The Question</a>
+    <a href="#sec-2">II. Vāk Before Mind</a>
+    <a href="#sec-3">III. The Four Levels as Psychology</a>
+    <a href="#sec-4">IV. Pratibhā and the Pre-Egoic Field</a>
+    <a href="#sec-5">V. Antaḥkaraṇa as Vāk's First Differentiation</a>
+    <a href="#sec-5b">Va. Perception, Emotion, Cognition</a>
+    <a href="#sec-6">VI. Comparative Psychology</a>
+    <a href="#sec-6b">VIa. Neuroscience Correlates</a>
+    <a href="#sec-7">VII. Forward to Part Two</a>
+    <a href="#footnotes">Footnotes</a>
+    <a href="#bibliography">Bibliography</a>
+    <a href="#glossary">Glossary</a>
+  </nav>
+
+  <nav class="allparts" aria-label="Series B — all parts">
+    <span class="current">Part I · Vāk as the Ground of Psychological Awareness</span> ·
+    <a href="https://shastrasvakpsychology-parttwo.culturalmusings.com/">Part II · Śabda-Bheda: The Birth of Discrimination</a> ·
+    <a href="https://shastrasvakpsychology-partthree.culturalmusings.com/">Part III · Sāma Veda and the Birth of Affect</a> ·
+    <a href="https://shastrasvakpsychology-partfour.culturalmusings.com/">Part IV · Nāṭyaśāstra I: Rasa</a> ·
+    <a href="https://shastrasvakpsychology-partfive.culturalmusings.com/">Part V · Nāṭyaśāstra II: Abhinaya</a> ·
+    <a href="https://shastrasvakpsychology-partsix.culturalmusings.com/">Part VI · Yoga-Śāstra: Citta-Vṛtti</a> ·
+    <a href="https://shastrasvakpsychology-partseven.culturalmusings.com/">Part VII · Proliferation I: Vyākaraṇa, Nyāya</a> ·
+    <a href="https://shastrasvakpsychology-parteight.culturalmusings.com/">Part VIII · Proliferation II: Arthaśāstra, Āyurveda</a> ·
+    <a href="https://shastrasvakpsychology-partnine.culturalmusings.com/">Part IX · Mantra-Śāstra</a> ·
+    <a href="https://shastrasvakpsychology-partten.culturalmusings.com/">Part X · Case Studies</a> ·
+    <a href="https://shastrasvakpsychology-parteleven.culturalmusings.com/">Part XI · Dharma and Adharma</a> ·
+    <a href="https://shastrasvakpsychology-parttwelve.culturalmusings.com/">Part XII · Pratiprasava</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="title-block">
+    <div class="kicker">Series B · Part I of XII · White Paper</div>
+    <h1>Vāk as the Ground of Psychological Awareness</h1>
+    <h2 class="subtitle">The Four Levels of Speech as the Architecture of Mind, and Why Indian Psychology Begins Where Western Psychology Ends</h2>
+    <div class="meta-grid">
+      <span><b>Series</b> B · Part I of XII</span>
+      <span><b>Vāk Level</b> Parā · Paśyantī</span>
+      <span><b>Format</b> White Paper · 45 Pages</span>
+      <span><b>Predecessor</b> Series A · The Advent of Language in Itself</span>
+    </div>
+  </div>
+
+  <div class="ornament">↗</div>
+
+  <section id="series-context" class="context-box">
+    <h3>A Note on the Series and Its Place</h3>
+    <p>This series begins where Series A's six parts concluded. Series A established that
+    language — vāk — is not a vehicle for pre-existing thought but a mode of being's own
+    self-disclosure, articulated across four simultaneous levels (Parā, Paśyantī, Madhyamā,
+    Vaikharī), encoded visibly in the Devanāgarī script, animated by the living interface of
+    Puruṣa and Prakṛti, carried in Śaṅkara's bhāṣya diction, and transmitted through an
+    unbroken paramparā. Series A's closing movement — Part VI, <em>Vāk Returning to Itself</em>
+    — traces language's own path back from Vaikharī to Parā and was always intended to hand
+    off to a further investigation. The present series, Series B, takes up that handoff and
+    asks a question Series A's instrument-focused analysis deliberately bracketed: if vāk is
+    truly the ground of all subsequent philosophical and śāstric activity, what does vāk's own
+    unfolding tell us about the evolution of human psychology itself — and how did that
+    unfolding give rise, historically and structurally, to the specific śāstras (Sāma Veda,
+    Nāṭyaśāstra, Yoga-śāstra, and the wider proliferation of disciplines) that the Indian
+    tradition produced as psychology's own self-differentiating instruments?</p>
+
+    <h4>Why Psychology, and Why Now</h4>
+    <p>It would be possible to treat this question as a matter of intellectual history — a
+    chronicle of which text gave rise to which discipline, in which century, under which royal
+    patronage. This paper, and the eleven that follow it, argue that such a treatment would
+    miss what is most distinctive about the Indian tradition's own self-understanding: that
+    śabda-bheda (the differentiation of sound into discrete, meaningful units) is not merely
+    the precondition for grammar and literature but the precondition for mind itself — that
+    the psychological capacities later traditions would call perception, discrimination,
+    affect, aesthetic feeling, attention, and ethical discernment are not separate faculties
+    that happen to use language as their reporting medium, but are themselves successive
+    crystallisations of vāk's own self-differentiating movement. To trace the śāstras' births
+    is, on this account, to trace psychology's own evolutionary architecture — not metaphorically,
+    but structurally, sūtra by sūtra.</p>
+
+    <table class="partmap">
+      <tr><th>Part</th><th>Psychological Stage</th><th>Focus</th></tr>
+      <tr><td>I</td><td class="this-paper">Pre-differentiated awareness</td><td class="this-paper">This Paper — Vāk as the Ground of Psychological Awareness</td></tr>
+      <tr><td>II</td><td>Differentiation / discernment</td><td>Śabda-Bheda: The Birth of Discrimination</td></tr>
+      <tr><td>III</td><td>Feeling-toned cognition</td><td>Sāma Veda and the Birth of Affect</td></tr>
+      <tr><td>IV</td><td>Aesthetic embodiment</td><td>Nāṭyaśāstra I: Rasa and the Architecture of Emotion</td></tr>
+      <tr><td>V</td><td>Somatic cognition</td><td>Nāṭyaśāstra II: Abhinaya and Embodied Expression</td></tr>
+      <tr><td>VI</td><td>Self-regulation / will</td><td>Yoga-Śāstra: Citta-Vṛtti and Disciplined Attention</td></tr>
+      <tr><td>VII</td><td>Specialised cognition</td><td>Proliferation of Śāstra I: Vyākaraṇa, Nyāya</td></tr>
+      <tr><td>VIII</td><td>Social/embodied extension</td><td>Proliferation of Śāstra II: Arthaśāstra, Āyurveda</td></tr>
+      <tr><td>IX</td><td>Recursive self-application</td><td>Mantra-Śāstra: Vāk Returning as Sound-Technology</td></tr>
+      <tr><td>X</td><td>Applied/historical synthesis</td><td>Case Studies in Śabda-to-Śāstra Transmission</td></tr>
+      <tr><td>XI</td><td>Ethical-metaphysical synthesis</td><td>Dharma and Adharma: The Convergent Psychology of Order</td></tr>
+      <tr><td>XII</td><td>Closing return</td><td>Pratiprasava: Vāk's Return and the Handoff Beyond</td></tr>
+    </table>
+
+    <blockquote class="pull">
+      Series A asked what language is. Series B asks what language does to the mind that
+      speaks it — and finds that the question dissolves, on examination, because there was
+      never a mind first and a language second. There was vāk, differentiating.
+      <span class="attrib">Series B · Editorial Framework</span>
+    </blockquote>
+  </section>
+
+  <div class="ornament">✦</div>
+
+  <section id="abstract">
+    <h2 class="sectiontitle" style="font-size:24px;">Abstract</h2>
+    <p>This paper establishes the philosophical and psychological ground for a twelve-part
+    investigation into the evolution of human psychology as traced through the differentiation
+    of vāk into the principal śāstras of the Indian tradition. Four arguments are developed.
+    First, the four levels of vāk — Parā, Paśyantī, Madhyamā, Vaikharī, established in Series A
+    as a linguistic-ontological framework — are here reframed explicitly as a <em>psychological</em>
+    architecture: a description not merely of how speech is structured but of how awareness
+    itself is structured prior to, during, and after its differentiation into discrete cognitive
+    acts. Second, the paper argues that Western developmental and cognitive psychology's
+    standard starting point — an already-individuated subject possessing pre-linguistic
+    percepts that language subsequently labels — inverts the order of psychological priority
+    that the Vedic and Upaniṣadic tradition assumes, in which undifferentiated awareness
+    (Parā) precedes and makes possible the very individuation (ahaṃkāra) that Western
+    psychology takes as its ground floor. Third, the paper introduces śabda-bheda — the
+    differentiation of sound into discrete phonemic and semantic units — as the specific
+    psychological mechanism by which Parā's plenitude becomes the differentiated experience of
+    a world containing distinct objects, persons, and relations, previewing the full
+    development of this mechanism in Part Two. Fourth, the paper maps the antaḥkaraṇa (the
+    fourfold inner instrument of manas, buddhi, ahaṃkāra, and citta) onto the vāk-hierarchy as
+    psychology's first internal differentiation-product, establishing the structural template
+    that Parts Three through Eleven will trace through its successive elaborations into
+    affect, aesthetic feeling, embodied expression, disciplined attention, specialised
+    cognition, applied social science, recursive sound-technology, and finally the ethical
+    architecture of dharma and adharma. A comparative section examines convergent and
+    divergent accounts of pre-egoic awareness in James, Piaget, Vygotsky, and contemplative
+    neuroscience, clarifying both the genuine structural parallels and the points at which the
+    Indian framework makes claims no Western developmental account has been positioned to
+    make.</p>
+    <div style="background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:20px 24px;margin:24px 0;font-size:14.5px;color:var(--ink-dim);">
+      <b style="color:var(--ink);">Reading Note</b> — Readers arriving from Series A will recognise
+      the four-vāk framework from Part One of that series (<a href="https://shastrasextentionvak.culturalmusings.com/">The Advent of Language in Itself</a>).
+      The present paper does not repeat that framework's linguistic-ontological argument in
+      full; it presupposes it and extends it into psychological territory Series A
+      deliberately left untouched. Readers new to the four-vāk doctrine should consult Series
+      A, Part One, Section III before proceeding, though Section II below provides a working
+      summary sufficient for this paper's argument.
+    </div>
+  </section>
+
+  <h1 class="sectionhead" id="sec-1">I.</h1>
+  <h2 class="sectiontitle">The Question Western Psychology Does Not Ask</h2>
+
+  <h3>1.1 Where Psychology Conventionally Begins</h3>
+  <p>Modern psychology — whether in its psychoanalytic, behaviourist, cognitive, or
+  developmental forms — conventionally begins its inquiry with an already-constituted subject:
+  an organism, an infant, a nervous system, possessing from the outset some repertoire of
+  pre-linguistic capacities (sensation, reflex, attachment-seeking, pattern-recognition) onto
+  which language is subsequently overlaid as an acquired skill. Jean Piaget's sensorimotor
+  stage, the first of his four stages of cognitive development, describes an infant who
+  already manipulates objects, forms schemas, and exhibits object permanence before any
+  productive language appears. Lev Vygotsky, who came closer than most Western developmental
+  psychologists to granting language a constitutive rather than merely expressive role,
+  nonetheless begins with a child whose thought and speech develop along initially separate
+  lines before merging into "verbal thought" — two streams converging, not one ground
+  differentiating.</p>
+  <p>This starting point is not a neutral empirical observation; it is itself a philosophical
+  commitment, and a specific one. It assumes that individuation — the existence of a bounded
+  subject distinct from its environment, possessing private mental contents that language
+  will later report — is psychology's ground floor, the place inquiry must start because it is
+  the place at which anything recognisable as a psychological subject already exists. The
+  question this paper asks is what happens to psychological inquiry when this assumption is
+  not granted — when, instead, the ground floor is taken to be a condition prior to
+  individuation, a condition the Vedic tradition names Parā vāk, and from which individuation
+  itself is shown to be a derivative, differentiated product rather than a starting
+  axiom.</p>
+
+  <h3>1.2 Śabda-Bheda as the Series' Organising Mechanism</h3>
+  <p>The term that will organise this entire twelve-part investigation is śabda-bheda —
+  literally "sound-differentiation" or "word-division," the technical grammatical and
+  philosophical term for the process by which an originally undivided flow of sound is
+  analysed, both by the grammarian's retrospective procedure and (this paper argues) by the
+  mind's own forward-moving cognitive activity, into discrete phonemes, words, and meaning-units.
+  Where Series A's sphoṭa doctrine (examined in Series A, Part One, Section II) addressed the
+  metaphysics of how a unified meaning is revealed through a sequence of perishing sounds, the
+  present series asks the complementary psychological question: what kind of mind is required
+  to perform — or to be the site of — this differentiation in the first place, and what does
+  the capacity for this differentiation become, once acquired, when it is turned upon
+  experience generally rather than upon speech narrowly?</p>
+  <p>The thesis this paper begins to develop, and that Part Two will develop in full, is that
+  śabda-bheda is not one psychological capacity among others but the template for psychological
+  differentiation as such. The same operation that divides a continuous phonetic stream into
+  discrete phonemes — and that Bhartṛhari's grammatical tradition analysed with such precision
+  — is, on this account, structurally identical to the operation by which an originally
+  undivided field of awareness comes to contain discrete percepts, discrete objects, discrete
+  emotions, and eventually a discrete self set over against a discrete world. Mind does not
+  first individuate and then, as a separate achievement, learn to divide sound into words.
+  Mind individuates <em>by</em> dividing — and the division it performs on sound is the most
+  fully documented, most philosophically analysed instance of a division it is, the present
+  series argues, performing continuously and everywhere.</p>
+
+  <blockquote class="pull">
+    Ask a Western psychologist where the self begins, and the answer will involve a body, a
+    boundary, an attachment figure. Ask the Vedic tradition the same question, and the answer
+    involves a sound dividing. These are not two answers to the same question. They are
+    answers that disagree about what kind of thing a beginning is.
+    <span class="attrib">Series B · Editorial Framework</span>
+  </blockquote>
+
+  <h3>1.3 The Scope of the Present Paper</h3>
+  <p>The present paper does not yet develop the full śabda-bheda mechanism — that is Part
+  Two's task. Its task is narrower and foundational: to establish, with the same philosophical
+  rigour Series A brought to vāk's linguistic-ontological status, that the four levels of vāk
+  constitute a coherent psychological architecture, and that this architecture entails a
+  specific, defensible, and — the paper will argue — psychologically more adequate account of
+  where mind begins than the individuated-subject starting point conventional Western
+  psychology assumes. Three sections develop this case. Section II reframes the four-vāk
+  doctrine explicitly in psychological terms, tracing Parā and Paśyantī as descriptions of
+  awareness prior to and at the threshold of differentiation. Section III examines pratibhā —
+  Bhartṛhari's term for the intuitive flash of pre-sequential insight, already introduced in
+  Series A's extended Part Three — as the closest the tradition comes to a direct
+  phenomenological report of what pre-differentiated awareness is like from the inside.
+  Section IV maps the antaḥkaraṇa, the fourfold inner instrument, onto this architecture as
+  psychology's first internal differentiation-product, establishing the structural template
+  the remainder of the series will trace through its successive elaborations.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-2">II.</h1>
+  <h2 class="sectiontitle">Vāk Before Mind: Reframing the Four Levels as Psychological Architecture</h2>
+
+  <h3>2.1 What Series A Established, Restated for the Present Purpose</h3>
+  <p>Series A, Part One established the four levels of vāk — Parā, Paśyantī, Madhyamā,
+  Vaikharī — as four simultaneous dimensions of every act of speech, distinguishable by
+  philosophical analysis though inseparable in practice: not four historical stages but four
+  strata of language's structure as a simultaneous phenomenon, present together in every
+  genuine act of communication. That paper's primary concern was linguistic-ontological: what
+  is language, such that it has this four-level structure? The present paper's concern is
+  psychological: what is mind, such that it shares — or rather, the argument will run,
+  <em>constitutes itself by way of</em> — this same four-level structure?</p>
+
+  <div class="vak-grid">
+    <div class="vak-card active">
+      <div class="vc-sanskrit">परा</div>
+      <div class="vc-roman">Parā</div>
+      <div class="vc-label">Unmanifest Awareness</div>
+      <p>Psychologically: awareness prior to any object, any boundary, any "I" set over
+      against a "this." Not unconsciousness — plenitude. The condition that makes any
+      subsequent psychological event possible, without itself being an event.</p>
+      <span class="vc-tag">This paper's primary level</span>
+    </div>
+    <div class="vak-card active">
+      <div class="vc-sanskrit">पश्यन्ती</div>
+      <div class="vc-roman">Paśyantī</div>
+      <div class="vc-label">The Visionary Gestalt</div>
+      <p>Psychologically: the moment awareness first holds a "something" — whole, undivided,
+      not-yet-named — corresponding to what gestalt psychology calls the pre-articulate
+      percept and what Bhartṛhari calls pratibhā.</p>
+      <span class="vc-tag">This paper's secondary level</span>
+    </div>
+    <div class="vak-card">
+      <div class="vc-sanskrit">मध्यमा</div>
+      <div class="vc-roman">Madhyamā</div>
+      <div class="vc-label">The Structured Inner Word</div>
+      <p>Psychologically: thought proper — sequential, grammatical, the level at which
+      discrete concepts, categories, and propositions are formed. The antaḥkaraṇa's
+      home level.</p>
+      <span class="vc-tag">Part II's primary level</span>
+    </div>
+    <div class="vak-card">
+      <div class="vc-sanskrit">वैखरी</div>
+      <div class="vc-roman">Vaikharī</div>
+      <div class="vc-label">Embodied Expression</div>
+      <p>Psychologically: behaviour, utterance, gesture — mind's psychological content as it
+      becomes available to others and to the self's own retrospective observation.</p>
+      <span class="vc-tag">Parts IV–V's primary level</span>
+    </div>
+  </div>
+
+  <h3>2.2 Parā as Pre-Egoic Plenitude, Not Psychological Absence</h3>
+  <p>The most consequential reframing this paper proposes concerns Parā. In Series A's
+  linguistic-ontological treatment, Parā was characterised as "not silence but plenitude: the
+  fullness out of which all sound arises." The psychological reframing preserves this
+  characterisation exactly and extends it: Parā, read psychologically, is not an absence of
+  mind — not sleep, not unconsciousness, not a developmental zero-point before anything
+  psychological has begun — but a condition of awareness so undifferentiated that none of the
+  categories ordinary psychology uses to describe mental content (a perceiver, a perceived, a
+  boundary between them) yet apply. This is a strong claim and requires careful statement: it
+  is not that Parā is a state some people sometimes achieve through advanced contemplative
+  practice (though the tradition certainly holds that recognising Parā is a contemplative
+  achievement); it is that Parā is, on the tradition's account, the ever-present ground from
+  which every individuated psychological event — every perception, every thought, every
+  emotion — continuously arises and into which it continuously subsides, whether or not the
+  experiencing subject recognises this ground as such.</p>
+  <p>The Taittirīya Upaniṣad's account of Brahman as ānanda (bliss) underlying and pervading
+  the successive sheaths (kośas) of the person — discussed at length in Series A's Part Three,
+  Section 15.1, in connection with the prāṇamaya-kośa — makes exactly this structural claim in
+  a different vocabulary: there is a ground-condition, present in every kośa from the grossest
+  to the subtlest, that does not itself belong to the hierarchy of successively subtler
+  embodiments but underlies and makes possible the entire hierarchy. Parā vāk is this same
+  ground-condition examined specifically through the lens of language and, in the present
+  paper's extension, through the lens of psychological awareness generally.</p>
+
+  <h3>2.3 The Ṛgvedic Source and Its Psychological Reading</h3>
+  <p>The four-vāk doctrine's earliest textual anchor, as Series A's Part One noted, is Ṛgveda
+  I.164.45 — the celebrated "four-footed" verse describing vāk as catuṣpadā, possessed of four
+  feet or quarters, of which "wise Brahmins know" only the fourth, the other three remaining
+  hidden in a "cave" (guhā). This verse has traditionally been read as a statement about the
+  hiddenness of language's deepest dimensions from ordinary speakers. The present paper adds a
+  psychological reading that does not displace the linguistic one but runs alongside it: the
+  "cave" in which three of vāk's four feet remain hidden is not merely a poetic figure for
+  linguistic obscurity but a precise description of how ordinary psychological self-awareness
+  operates. The ordinary mind, attending to its own thoughts and utterances, has direct access
+  only to Vaikharī — the spoken or behaviourally manifest level — and infers, dimly and
+  indirectly, the existence of Madhyamā (the structured thought preceding utterance). Paśyantī
+  and Parā remain, for the unreflective mind, genuinely hidden — not because they are absent,
+  but because the ordinary operations of attention are not configured to register them as
+  distinct strata of the very awareness doing the attending.</p>
+
+  <div class="sanskrit-block">
+    चत्वारि वाक्परिमिता पदानि तानि विदुर्ब्राह्मणा ये मनीषिणः ।<br>
+    गुहा त्रीणि निहिता नेङ्गयन्ति तुरीयं वाचो मनुष्या वदन्ति ॥
+    <span class="translit">catvāri vāk-parimitā padāni tāni vidur brāhmaṇā ye manīṣiṇaḥ · guhā trīṇi nihitā neṅgayanti turīyaṃ vāco manuṣyā vadanti</span>
+    <span class="gloss">Speech is measured in four quarters; the wise Brahmins who possess insight know them. Three, hidden in a cave, do not move; men speak the fourth quarter of speech.</span>
+  </div>
+  <div class="cite-source">Ṛgveda I.164.45 — the locus classicus of the four-vāk doctrine</div>
+
+  <h3>2.4 Why "Hidden" Is Not "Absent": The Psychological Stakes</h3>
+  <p>The distinction between hidden and absent carries significant psychological weight for the
+  argument this series develops. If Parā and Paśyantī were simply absent from ordinary
+  psychological functioning — present only in rare altered states — then the four-vāk
+  doctrine would offer, at most, a description of unusual contemplative experiences, of
+  limited relevance to psychology's ordinary subject matter: perception, emotion, cognition,
+  social behaviour as they occur in everyday, non-contemplative life. The doctrine's actual
+  claim is considerably stronger and, for this series' purposes, considerably more important:
+  Parā and Paśyantī are continuously operative in every act of ordinary cognition, providing
+  the ground and the gestalt-unity without which Madhyamā's sequential structuring and
+  Vaikharī's behavioural expression could not occur at all. The grammarian's sphoṭa — the
+  unified meaning grasped in a single cognitive act despite the sequential phonemes that
+  manifest it — is, as Series A's Part One Section II established, precisely evidence of
+  Paśyantī's continuous, non-exotic operation in the most mundane act of listening to a
+  sentence. The present series' psychological claim parallels this exactly: ordinary
+  perception, ordinary emotion, ordinary thought are, at every moment, differentiated products
+  of an undifferentiated ground that is not absent during ordinary functioning but is simply
+  not attended to as such.</p>
+
+  <blockquote class="pull">
+    The cave in the Ṛgvedic verse is not a place where something is kept that could, in
+    principle, be elsewhere. The cave is the very structure of ordinary attention — which sees
+    what has already been differentiated and infers, dimly, that differentiation must have
+    come from somewhere, without thereby gaining any direct purchase on the somewhere itself.
+    <span class="attrib">Series B · Editorial Framework</span>
+  </blockquote>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-3">III.</h1>
+  <h2 class="sectiontitle">The Four Levels as a Theory of Psychological Development</h2>
+
+  <h3>3.1 Not Stages, But a Structure Re-Entered at Every Moment</h3>
+  <p>It is tempting, on first encountering a four-level framework running from undifferentiated
+  ground to fully manifest expression, to read it as a developmental sequence in the ordinary
+  psychological sense — analogous to Piaget's stages, where an infant progresses through
+  sensorimotor, preoperational, concrete operational, and formal operational stages across
+  years of maturation, each stage superseding and largely replacing the one before. The
+  four-vāk framework, as Series A established and the present paper now extends
+  psychologically, resists this reading. The four levels are not superseded; they are not
+  stages a mature mind leaves behind. Every act of speech, and on this paper's argument every
+  act of psychological cognition generally, re-enacts the full movement from Parā through
+  Paśyantī and Madhyamā to Vaikharī, moment by moment, for as long as cognition continues.
+  Maturation, on this account, does not consist in progressing beyond Parā and Paśyantī into
+  Madhyamā and Vaikharī (the conventional developmental-psychology picture, in which early
+  pre-verbal experience is superseded by mature verbal-conceptual thought) but in becoming
+  increasingly capable of registering all four levels as they continuously co-occur — which is
+  closer to the contemplative traditions' account of psychological and spiritual maturation
+  than to Piaget's.</p>
+
+  <h3>3.2 A Genuine Developmental Claim, Nonetheless</h3>
+  <p>This is not to say the framework makes no developmental claims at all. The Indian
+  tradition's account of human life-stages (the four āśramas) and its account of the
+  individual's psychological formation (saṃskāra theory, examined further in Part Six in
+  connection with Yoga-śāstra) both assume that the capacity to register Parā and Paśyantī
+  consciously, rather than merely operating unconsciously through them, is itself something
+  that develops — typically late, typically through deliberate practice, and typically
+  building upon rather than replacing the ordinary developmental achievements (object
+  permanence, language acquisition, theory of mind) that Western developmental psychology
+  documents in early childhood. The relevant developmental claim is therefore not "Parā
+  develops into Madhyamā" but "the capacity for the mature mind to recognise Parā and
+  Paśyantī's continuous operation, rather than registering only their Madhyamā and Vaikharī
+  products, is a further developmental achievement built upon — not opposed to — ordinary
+  cognitive maturation."</p>
+
+  <h3>3.3 Mahat and Paśyantī: The Correspondence Restated for Psychology</h3>
+  <p>Series A's Part Three, Section 5.2, established a precise correspondence between Mahat
+  (the Sāṃkhya tradition's term for cosmic intellect, the first and highest product of
+  Prakṛti's activation in proximity to Puruṣa) and Paśyantī: both name the interface at its
+  most transparent, the point at which a product of Prakṛti's dynamism is most fully
+  illuminated by Puruṣa's lucidity, prior to the obscuring effect of individuation
+  (ahaṃkāra). The present paper's psychological extension of this correspondence is direct:
+  Mahat-as-Paśyantī is the psychological moment of <em>gestalt apprehension</em> — the
+  moment, available in principle in every act of perception though rarely attended to as
+  such, at which a perceptual field is grasped as a unified whole before the discriminating,
+  individuating, naming operations of ahaṃkāra and manas parse it into discrete, labelled
+  constituents. Gestalt psychology's own foundational observation — that perception
+  characteristically apprehends wholes (a face, a melody, a scene) prior to and not as a mere
+  sum of analysed parts — is, on this reading, an empirical-psychological rediscovery,
+  arrived at independently and through entirely different methods, of exactly the
+  Mahat/Paśyantī correspondence the Sāṃkhya-Vedāntic tradition had already mapped at the
+  level of cosmological and linguistic theory.</p>
+
+  <table class="datatable">
+    <caption>Convergent Observations: Gestalt Psychology and the Mahat/Paśyantī Correspondence</caption>
+    <tr><th>Gestalt Psychology (Wertheimer, Köhler, Koffka)</th><th>Sāṃkhya-Vedāntic Framework</th></tr>
+    <tr><td>The whole is perceived prior to, and is not reducible to, the sum of its analysed parts</td><td>Paśyantī is the gestalt of meaning, present whole before sequential differentiation into Madhyamā's grammar</td></tr>
+    <tr><td>Perceptual organisation (figure-ground, closure, proximity) occurs automatically, prior to deliberate analysis</td><td>Mahat's adhyavasāya (determination) occurs as buddhi's spontaneous discriminative act, prior to ahaṃkāra's individuating overlay</td></tr>
+    <tr><td>Apparent motion (the phi phenomenon) demonstrates perception constructs continuity not strictly given in discrete stimuli</td><td>Sphoṭa is revealed by, not constituted from, the discrete sequential phonemes — continuity is disclosed, not assembled</td></tr>
+    <tr><td>The gestalt principle is treated as a brute empirical regularity of visual and auditory cognition</td><td>The Mahat/Paśyantī correspondence is treated as a metaphysically grounded feature of the Puruṣa–Prakṛti interface, not a brute regularity</td></tr>
+  </table>
+
+  <h3>3.4 The Limits of the Gestalt Parallel</h3>
+  <p>The parallel should not be overstated into an identity claim, in keeping with the
+  methodological caution Series A's Part Two, Section 2.3, exercised regarding the
+  svara/vyañjana–Puruṣa/Prakṛti parallel. Gestalt psychology, as an early-twentieth-century
+  German experimental tradition, developed its account of perceptual wholeness without
+  reference to, and largely without awareness of, the Sāṃkhya-Vedāntic framework, and its
+  explanatory ambitions are considerably narrower: gestalt psychologists sought to describe
+  regularities in visual and auditory perception, not to ground those regularities in a
+  comprehensive metaphysics of consciousness and matter. What the parallel does establish,
+  and what is significant for this series' argument, is that two independently developed
+  traditions of inquiry into perception — one ancient and metaphysical, one modern and
+  experimental — converge on the same basic structural observation: that wholeness in
+  cognition is not built up from parts but is, in some sense the present series will continue
+  to investigate, prior to and the condition of any subsequent analysis into parts.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-4">IV.</h1>
+  <h2 class="sectiontitle">Pratibhā: The Tradition's Own Phenomenological Report</h2>
+
+  <h3>4.1 Why Pratibhā Matters for a Psychology of Vāk</h3>
+  <p>Series A's Part Three, Section 13.2, introduced Bhartṛhari's concept of pratibhā — the
+  intuitive flash, the pre-linguistic insight, the holistic visionary apprehension by which
+  Śabda-Brahman's undivided potency is most directly accessed — in the context of that
+  paper's extended study of Śabda-Brahman cosmology. The present paper returns to pratibhā
+  because it constitutes the closest the Sanskrit philosophical tradition comes to a direct
+  first-person, phenomenological description of what it is like to occupy the Paśyantī level
+  of awareness — and a psychology of vāk requires exactly this kind of phenomenological
+  anchor if its claims about pre-differentiated awareness are to amount to more than abstract
+  metaphysical assertion.</p>
+
+  <h3>4.2 The Phenomenology of Pratibhā: Three Characteristic Features</h3>
+  <p>Bhartṛhari's scattered remarks on pratibhā across the Vākyapadīya, read together with the
+  later grammatical-philosophical commentary tradition, yield three recurring characteristics
+  that a psychology of vāk can treat as testable, or at least examinable, phenomenological
+  markers. First, pratibhā is described as <em>akrama</em> — without sequence, non-successive
+  — the knowing of a whole meaning in a single undivided cognitive act rather than through the
+  accumulation of sequentially apprehended parts. Second, pratibhā is described as occurring
+  prior to, and as the condition for, the deliberate, effortful application of grammatical and
+  logical analysis — one does not reason one's way to pratibhā; pratibhā is what makes
+  subsequent reasoning possible by providing it with something already grasped to reason
+  about. Third, pratibhā is described in the tradition as available not only to humans engaged
+  in linguistic comprehension but, in its most striking formulation, to animals and even
+  newborn infants, whose capacity to recognise danger, seek the mother, or respond
+  appropriately to their environment without any prior instruction is explained by the
+  tradition as an instance of pratibhā operating without the overlay of acquired,
+  Madhyamā-level conceptual knowledge.</p>
+
+  <h3>4.3 The Infant and the Calf: A Pre-Modern Account of Innate Cognition</h3>
+  <p>This third feature deserves particular attention because it anticipates, by roughly
+  fifteen centuries, debates in contemporary developmental psychology concerning innate versus
+  acquired cognitive capacities. The grammatical-philosophical tradition's standard example —
+  a newborn calf that, moments after birth, seeks its mother's udder without any process of
+  trial-and-error learning — is offered as evidence that some cognitive achievements are not
+  built up through sequential, Madhyamā-level reasoning from sensory data but are immediately
+  available through pratibhā, a capacity the tradition treats as continuous with, rather than
+  qualitatively different from, the mature human capacity for linguistic comprehension's own
+  instantaneous grasp of meaning. The structural claim — that some cognition is immediate and
+  holistic rather than sequential and constructed — finds a notable echo in contemporary
+  research on neonatal face-preference and other early-emerging perceptual biases, though the
+  present paper does not claim, and the methodological caution exercised throughout this
+  series requires stating clearly, that the Sanskrit tradition's calf-example anticipated any
+  specific finding of modern developmental neuroscience. What it anticipated, in a general and
+  philosophically significant way, was the structural possibility itself: that not all
+  cognition need be built from parts.</p>
+
+  <blockquote class="pull">
+    A calf that has never seen a udder finds it within minutes of birth. The grammatical
+    tradition did not need a laboratory to notice that something is wrong with any psychology
+    that insists all knowing must be assembled, piece by piece, from a blank slate. It needed
+    only to watch a calf.
+    <span class="attrib">Series B · Editorial Framework</span>
+  </blockquote>
+
+  <h3>4.4 Pratibhā and the Pre-Egoic Field: Connecting Sections III and IV</h3>
+  <p>The connection between pratibhā (Section IV) and the Mahat/Paśyantī gestalt-correspondence
+  (Section III) can now be stated precisely. Pratibhā is what it is like, from the inside, to
+  occupy the Paśyantī level of awareness — the phenomenological report corresponding to the
+  structural-metaphysical claim that Section III developed at the level of theory. Where
+  Section III argued that Paśyantī is the psychological moment of gestalt apprehension prior to
+  ahaṃkāra's individuating, naming overlay, Section IV's pratibhā doctrine specifies what that
+  moment feels like (sequenceless, immediate, prior to deliberate reasoning) and where it can
+  be observed with minimal interference from acquired conceptual overlay (in animals, in
+  infants, and — the tradition holds, though this paper does not develop the point further
+  here, reserving it for Part Six's treatment of Yoga-śāstra's disciplined attention — in the
+  advanced contemplative's deliberately cultivated return to immediate, unmediated
+  awareness).</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-5">V.</h1>
+  <h2 class="sectiontitle">The Antaḥkaraṇa as Vāk's First Internal Differentiation</h2>
+
+  <h3>5.1 From Paśyantī to Madhyamā: The Decisive Psychological Threshold</h3>
+  <p>If Sections II through IV have established Parā and Paśyantī as describing
+  pre-differentiated and threshold-of-differentiation awareness respectively, the present
+  section examines the threshold itself: the specific psychological mechanism by which
+  Paśyantī's undivided gestalt becomes Madhyamā's structured, sequential, discrete inner
+  word. The tradition's name for this mechanism, inherited from Sāṃkhya and adopted with
+  modification across virtually every subsequent Indian philosophical school including
+  Advaita Vedānta (as Series A's Part Five, Section 5.2, documented in detail), is the
+  antaḥkaraṇa — the fourfold inner instrument comprising manas (the coordinating mind-organ),
+  buddhi (discriminative intelligence), ahaṃkāra (the individuating ego-sense), and citta (the
+  substrate of memory and latent impression, emphasised particularly in the Yoga tradition
+  and examined fully in Part Six).</p>
+
+  <h3>5.2 Why the Antaḥkaraṇa Is Vāk's Product, Not a Separate Faculty</h3>
+  <p>The conventional presentation of the antaḥkaraṇa in introductory accounts of Indian
+  philosophy treats it as a psychological taxonomy existing independently of, and merely
+  described by, language — a list of mental faculties that could, in principle, be discussed
+  without any reference to vāk at all. The present paper's central claim in this section is
+  that this independence is illusory: the antaḥkaraṇa's fourfold structure is not a separate
+  psychological fact that happens to be nameable in language; it is the specific
+  differentiation-product that occurs when Paśyantī's gestalt unity is divided — by the same
+  fundamental operation of śabda-bheda that Part Two will examine at the phonemic level —
+  into four distinguishable functions. Manas's coordinating function, buddhi's discriminating
+  function, ahaṃkāra's individuating function, and citta's memory-retaining function are, on
+  this account, four ways in which an originally undivided cognitive-linguistic potency gets
+  cut, exactly as a continuous phonetic stream gets cut into discrete phonemes — and the cuts
+  in both cases are performed by structurally the same operation, applied to different
+  material.</p>
+
+  <table class="datatable">
+    <caption>The Antaḥkaraṇa as Vāk's First Internal Differentiation</caption>
+    <tr><th>Antaḥkaraṇa Function</th><th>Sanskrit</th><th>Vāk-Level Correspondence</th><th>Psychological Operation</th></tr>
+    <tr><td>Coordinating mind-organ</td><td>मनस् (manas)</td><td>Madhyamā (entry point)</td><td>Gathers sensory input into a single field available for discrimination</td></tr>
+    <tr><td>Discriminative intelligence</td><td>बुद्धि (buddhi)</td><td>Madhyamā (core function)</td><td>Performs adhyavasāya — determinate identification of what manas has gathered</td></tr>
+    <tr><td>Individuating ego-sense</td><td>अहंकार (ahaṃkāra)</td><td>Madhyamā→Vaikharī threshold</td><td>Attributes buddhi's determinations to a bounded "I," generating ownership of experience</td></tr>
+    <tr><td>Memory / latent-impression substrate</td><td>चित्त (citta)</td><td>Spans all four levels</td><td>Retains saṃskāras (impressions) that condition future manas/buddhi activity — examined fully in Part VI</td></tr>
+  </table>
+
+  <h3>5.3 Why Citta Spans All Four Levels</h3>
+  <p>Citta's position in the table above requires comment, since it differs structurally from
+  the other three antaḥkaraṇa functions. Manas, buddhi, and ahaṃkāra are each most naturally
+  located at or near the Madhyamā level — they are the specific operations by which Madhyamā's
+  structured inner word is produced from Paśyantī's gestalt. Citta, by contrast, is better
+  understood as the substrate within which saṃskāras (latent impressions left by every prior
+  act of manas, buddhi, and ahaṃkāra) are retained — and these impressions, the Yoga tradition
+  holds, condition not only future Madhyamā-level cognition but the very texture of Paśyantī's
+  gestalt-apprehension itself, since what gestalt a mind is disposed to grasp as unified in the
+  first place is shaped by prior impressions sedimented at a level the tradition treats as
+  deeper than ordinary discursive thought. This is the philosophical basis for Part Six's
+  extended treatment of Patañjali's citta-vṛtti-nirodha (the stilling of citta's fluctuations)
+  as Yoga's central psychological technology: if citta genuinely spans and conditions all four
+  levels of the vāk-hierarchy, then a discipline aimed at citta's purification is, properly
+  understood, a discipline aimed at the entire architecture this paper has been describing, not
+  merely at one local faculty within it.</p>
+
+  <h3>5.4 The Productive Disanalogy with Western Faculty Psychology</h3>
+  <p>It is worth pausing to note one productive point of difference between the antaḥkaraṇa
+  model and the faculty-psychology tradition that runs from Aristotle's division of the soul's
+  powers through medieval scholastic psychology to early modern accounts of mental faculties
+  (understanding, will, memory, imagination) that persisted, in modified form, into
+  nineteenth-century psychology. Western faculty psychology typically treats its faculties as
+  relatively independent modules, each performing a distinct kind of mental operation,
+  interacting with but not derived from one another. The antaḥkaraṇa model, by contrast,
+  explicitly derives all four functions from a single prior differentiation-event — the
+  Paśyantī-to-Madhyamā transition this section has examined — such that manas, buddhi,
+  ahaṃkāra, and citta are not independent modules but four aspects of a single differentiating
+  movement, distinguishable by analysis but never, even in principle, separable in actual
+  psychological functioning. This is the same structural move Series A's Part Three, Section
+  2.2, made regarding the twenty-three Sāṃkhya tattvas generally: not a taxonomy of
+  independent entities but a taxonomy of interface-events, degrees of a single continuous
+  differentiation-process.</p>
+
+  <blockquote class="pull">
+    Western psychology asks: how do separate faculties interact to produce a unified mind? The
+    antaḥkaraṇa model asks the reverse question: how does a unified ground differentiate into
+    what then appears, retrospectively, as separate faculties? The two questions are not
+    answers to the same problem. They are diagnostic of two entirely different starting
+    assumptions about what unity and division, in a mind, actually are.
+    <span class="attrib">Series B · Editorial Framework</span>
+  </blockquote>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-5b">V<span style="font-size:11px;">a</span>.</h1>
+  <h2 class="sectiontitle">Three Case Domains: Perception, Emotion, and Cognition as Vāk-Differentiation Products</h2>
+
+  <h3>5a.1 Why Case Domains Are Necessary Before Comparison</h3>
+  <p>Before this paper turns, in Section VI, to a systematic comparison with Western
+  psychological frameworks, it is necessary to specify with greater precision what the
+  preceding sections' architecture predicts about three domains any psychology must address:
+  perception, emotion, and cognition. Without this specification, the comparative work of
+  Section VI risks remaining at the level of structural analogy — "Paśyantī resembles the
+  gestalt," "Madhyamā resembles inner speech" — without showing what difference the analogy
+  makes to how perception, emotion, and cognition are actually to be understood. The present
+  section supplies that specification, examining each domain in turn as a differentiated
+  product of the vāk-architecture rather than as an independent psychological category that
+  merely happens to be describable in vāk-terms.</p>
+
+  <h3>5a.2 Perception: Pratyakṣa as Vaikharī's Inward-Facing Counterpart</h3>
+  <p>The classical Indian epistemological term for perception, pratyakṣa — literally "before
+  the eye" or "present to the senses" — is standardly treated across the pramāṇa-śāstra
+  traditions (Nyāya, Mīmāṃsā, Sāṃkhya, and the Buddhist epistemologists alike) as the most
+  basic and most reliable means of valid knowledge (pramāṇa), prior in the order of
+  epistemic justification to inference (anumāna), testimony (śabda), and the other recognised
+  means. The vāk-architecture developed in this paper requires a reframing of pratyakṣa's
+  priority that is subtle but consequential: pratyakṣa is epistemically basic — the tradition
+  is correct that other forms of knowledge presuppose and are tested against it — but it is
+  not, on this paper's argument, psychologically basic in the developmental or structural
+  sense, because pratyakṣa as ordinarily analysed (a determinate cognition of a determinate
+  object, already discriminated from its surrounding field) is itself a Madhyamā-level
+  achievement, downstream of the Paśyantī-level gestalt-apprehension Section III examined.
+  What ordinary perceptual experience reports — "I see a tree," a determinate cognition of a
+  bounded object — already presupposes that the visual field's continuous gestalt has been
+  parsed into a tree-shaped figure standing out against a ground. The pratyakṣa the
+  epistemologist analyses is, in other words, the Vaikharī-adjacent endpoint of a
+  differentiation process whose earlier stages (Paśyantī's undivided gestalt, the
+  antaḥkaraṇa's discriminating operation) the standard epistemological treatments of
+  pratyakṣa do not typically foreground, because their concern is with perception's epistemic
+  warrant rather than with its psychological genesis.</p>
+  <p>This reframing has a specific and testable consequence for how perceptual illusion is to
+  be understood — a topic Series A's Part Five, Section 8.2, already examined in connection
+  with the rope-snake (rajju-sarpa) illustration of adhyāsa, though from the angle of
+  rhetorical and epistemological theory (khyāti-vāda) rather than the developmental-
+  psychological angle the present paper pursues. If ordinary determinate perception is itself
+  a differentiation-product, then perceptual error is not a contamination introduced into an
+  otherwise pristine perceptual given; it is a misfire in the very differentiation-process by
+  which any determinate perceptual content — true or false — comes to be given at all. The
+  rope-snake case is illuminating precisely because it shows the same Paśyantī-level visual
+  gestalt (an elongated shape in dim light) being differentiated, by the same fundamental
+  operation, into two different Madhyamā-level determinate cognitions (rope, snake) depending
+  on factors — prior saṃskāra, ambient lighting, the perceiver's expectations — that condition
+  how the antaḥkaraṇa's discriminating function resolves an underdetermined gestalt. Error and
+  veridical perception are, on this account, the same kind of psychological event; they differ
+  only in whether the resolution achieved matches the object's actual structure.</p>
+
+  <h3>5a.3 Emotion: Bhāva as Citta-Level Conditioning Made Manifest</h3>
+  <p>The classical Indian vocabulary for emotion — bhāva (state, feeling, the term that will
+  receive its fullest psychological treatment in Part Four's examination of the Nāṭyaśāstra's
+  rasa theory) — already encodes, in its etymology from the root bhū (to be, to become), a
+  claim about emotion's ontological status that the present paper's architecture can now make
+  precise. A bhāva is not, on the classical analysis, a private inner sensation occurring
+  inside a pre-existing subject (the standard Western folk-psychological and, in modified
+  form, much of the academic-psychological picture of emotion as an internal feeling-state);
+  it is a becoming, a process by which citta's retained saṃskāras condition the texture of a
+  given moment's Paśyantī-level gestalt before that gestalt is even discriminated into a
+  determinate object of attention. This is why the Nāṭyaśāstra tradition, examined fully in
+  Part Four, treats bhāva and rasa as communicable and even contagious across a theatrical
+  audience in a way that a purely private, internal-sensation model of emotion struggles to
+  explain: if emotion is, at its root, a conditioning of the shared Paśyantī-level field of
+  apprehension rather than a sealed private event inside one perceiver's skull, then a
+  skillfully constructed aesthetic stimulus can condition that same field in multiple
+  perceivers simultaneously, producing what the tradition calls sādhāraṇīkaraṇa —
+  generalisation, the loss of the particular and personal reference that would otherwise make
+  one perceiver's grief inaccessible to another's direct apprehension.</p>
+  <p>The present paper does not develop the rasa theory itself — that is Part Four's task in
+  full — but it is necessary to establish here, as a direct consequence of the antaḥkaraṇa
+  architecture mapped in Section V, that bhāva's classical treatment as citta-conditioned
+  becoming rather than private sensation is not an idiosyncratic feature of dramaturgical
+  theory specifically. It is the direct psychological consequence of treating citta as the
+  saṃskāra-substrate spanning all four vāk-levels (Section 5.3 above): if citta conditions
+  Paśyantī's gestalt before Madhyamā's discrimination occurs, then whatever bhāva is operative
+  in a given moment is, in a precise sense, prior to and conditioning of the discriminated
+  perceptual and conceptual content of that moment, not a separate add-on occurring after
+  perception and cognition have already done their work.</p>
+
+  <h3>5a.4 Cognition: Vicāra and the Madhyamā-Level Discursive Operation</h3>
+  <p>Cognition in the narrower, discursive sense — reasoning, inference, deliberate
+  conceptual analysis, the operation the tradition calls vicāra — is, on the architecture this
+  paper has developed, the antaḥkaraṇa's buddhi-function operating in its most fully
+  Madhyamā-level mode: sequential, rule-governed, capable of being laid out step by step in
+  a way that neither Paśyantī's gestalt-apprehension nor Vaikharī's embodied expression can be.
+  This is the level at which Pāṇinian grammatical analysis (examined extensively in Series A's
+  Part One, Section IV, and to be examined further in this series' Part Seven) and Nyāya
+  logical analysis (previewed in this series' Part Seven) both operate, and it is the level
+  most readily recognisable to a Western-trained psychologist as "thought" in the ordinary
+  sense — propositional, truth-evaluable, expressible step by step. The present paper's
+  contribution to understanding vicāra is to insist that this Madhyamā-level discursive
+  operation, however sophisticated its products (a Pāṇinian sūtra, a Nyāya syllogism, a
+  Brahmasūtra-Bhāṣya argument), is never free-standing; it is always a further differentiation
+  of a Paśyantī-level gestalt that vicāra's own sequential unfolding does not create but only
+  unpacks — exactly as Series A's Part One, Section II, established for sphoṭa: the sequential
+  phonemes do not constitute the meaning, they reveal it. Vicāra's sequential steps do not
+  constitute the insight a piece of reasoning eventually arrives at; on this paper's argument,
+  they unpack an insight that was, in however inchoate a form, already present at the
+  Paśyantī level before the first step of the argument was taken.</p>
+
+  <table class="datatable">
+    <caption>Three Case Domains Mapped onto the Vāk-Architecture</caption>
+    <tr><th>Domain</th><th>Classical Term</th><th>Conventional Western Treatment</th><th>This Paper's Reframing</th></tr>
+    <tr><td>Perception</td><td>प्रत्यक्ष (pratyakṣa)</td><td>Basic, given, prior to interpretation</td><td>Already a Madhyamā-level differentiation-product of a prior Paśyantī gestalt; error and veridical perception share the same underlying mechanism</td></tr>
+    <tr><td>Emotion</td><td>भाव (bhāva)</td><td>Private internal feeling-state inside a sealed subject</td><td>A citta-conditioned becoming that shapes the shared Paśyantī field prior to discrimination — explaining aesthetic contagion (sādhāraṇīkaraṇa)</td></tr>
+    <tr><td>Cognition</td><td>विचार (vicāra)</td><td>Sequential, rule-governed reasoning as thought's paradigm case</td><td>Madhyamā's most fully discursive mode, unpacking rather than constituting a Paśyantī-level insight already inchoately present</td></tr>
+  </table>
+
+  <h3>5a.5 The Common Thread: Differentiation, Not Construction</h3>
+  <p>A single methodological thread runs through all three case domains examined in this
+  section, and it is worth making explicit before the paper turns to comparative psychology
+  in Section VI. In each domain — perception, emotion, cognition — the conventional treatment
+  (Western folk-psychological or much of mainstream academic psychology) treats the
+  phenomenon as constructed: built up from more basic elements (sense-data assembled into
+  percepts, physiological arousal labelled into emotions, premises combined into conclusions).
+  The vāk-architecture's treatment is instead differentiation: each phenomenon is what results
+  when an antecedently whole, undivided field (Paśyantī, conditioned by citta's saṃskāras) is
+  cut, parsed, and resolved into a determinate content by the antaḥkaraṇa's discriminating
+  operation. Construction and differentiation are not merely different metaphors for the same
+  process; they generate different empirical and philosophical commitments — about where error
+  comes from, about why aesthetic and emotional experience can be shared across perceivers,
+  and about what a sequential argument's logical steps are actually doing. Establishing this
+  thread is the necessary final preparation for the comparative work Section VI now
+  undertakes.</p>
+
+  <blockquote class="pull">
+    Ask whether perception, emotion, and cognition are built up or cut out, and you have asked
+    the single most consequential question a psychology can ask before it has said anything
+    else at all. The Indian tradition's answer is uniform across all three domains: they are
+    cut out. What varies is only what is doing the cutting, and how cleanly.
+    <span class="attrib">Series B · Editorial Framework</span>
+  </blockquote>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-6">VI.</h1>
+  <h2 class="sectiontitle">Comparative Psychology: James, Piaget, Vygotsky, and the Pre-Egoic Field</h2>
+
+  <h3>6.1 William James and the Specious Present</h3>
+  <p>William James's account of the "stream of consciousness" in The Principles of Psychology
+  (1890) remains, among canonical Western psychological theories, the closest approach to the
+  Indian tradition's claim that ordinary awareness is continuously, rather than only
+  occasionally, structured by something like a pre-differentiated unity. James's concept of
+  the "specious present" — the brief but extended interval of experienced time within which a
+  succession of events is grasped as a single unified temporal gestalt rather than as discrete,
+  serially-apprehended instants — bears a structural resemblance to Paśyantī's gestalt-grasp
+  of meaning prior to Madhyamā's sequential parsing. James himself, notably, drew explicitly
+  on his reading of Vedānta and other Indian philosophical sources in developing his later
+  thought, particularly in his engagement with mystical experience in The Varieties of
+  Religious Experience (1902), though his systematic psychological theory in the Principles
+  developed largely independently of these later, more explicitly comparative interests.</p>
+
+  <h3>6.2 Piaget's Sensorimotor Stage and the Limits of the Parallel</h3>
+  <p>Piaget's account of the infant's sensorimotor stage — a period, in his framework, prior
+  to the emergence of symbolic representation and language, during which the infant's
+  cognition is organised entirely around direct sensorimotor engagement with the immediate
+  environment — might seem, at first approach, to offer a developmental-psychological
+  correlate to this paper's account of pre-Madhyamā awareness. The parallel, however, breaks
+  down on closer examination in a way that is instructive for the present series' argument.
+  Piaget's sensorimotor infant is, for Piaget, a primitive precursor to mature symbolic
+  thought — a stage to be outgrown, its cognitive limitations (failure of object permanence
+  before roughly eight months, egocentrism, lack of conservation) treated as developmental
+  deficiencies that later stages correct. The four-vāk tradition's Parā and Paśyantī are, by
+  contrast, never treated as deficient or primitive relative to Madhyamā and Vaikharī; they
+  are treated as the ground that Madhyamā and Vaikharī presuppose and could not function
+  without, at every developmental stage including full adult maturity. The directionality of
+  value is, in this specific respect, reversed between the two frameworks: Piaget's
+  developmental arc moves away from something taken to be cognitively limited, while the
+  Indian tradition's contemplative arc moves toward conscious recognition of something taken
+  to be cognitively foundational.</p>
+
+  <h3>6.3 Vygotsky's Inner Speech and Madhyamā</h3>
+  <p>Lev Vygotsky's account of "inner speech" (vnutrennaya rech), developed in Thought and
+  Language (1934) and subsequent work, offers the closest Western developmental-psychological
+  correlate to Madhyamā vāk specifically. Vygotsky's inner speech is, like Madhyamā,
+  characterised as abbreviated, predicative, and structurally distinct from fully externalised
+  speech — a genuinely internal, grammatically organised but not-yet-vocalised mental
+  language that mediates between unstructured pre-verbal thought and fully articulated public
+  utterance. Vygotsky's developmental claim — that inner speech develops ontogenetically out
+  of, and remains derivationally related to, externalised social speech (the famous thesis
+  that "egocentric speech" observed in young children's solitary play is internalised over
+  development into adult inner speech) — runs in the opposite direction from the four-vāk
+  tradition's claim that Vaikharī (external speech) is itself a derivative, outward
+  crystallisation of Madhyamā, which is in turn a derivative crystallisation of Paśyantī. Where
+  Vygotsky derives the inner from the outer, the Indian tradition derives the outer from the
+  inner — and, at its deepest level (Parā), from what is prior to any inner/outer distinction
+  whatsoever.</p>
+
+  <table class="datatable">
+    <caption>Three Western Frameworks Against the Four-Vāk Architecture</caption>
+    <tr><th>Western Framework</th><th>Closest Vāk Correlate</th><th>Point of Convergence</th><th>Point of Genuine Divergence</th></tr>
+    <tr><td>James's specious present / stream of consciousness</td><td>Paśyantī</td><td>Both posit experienced unity exceeding discrete, serially-processed instants</td><td>James offers no metaphysical ground (Parā) beneath the stream; the stream is, for James, psychologically basic</td></tr>
+    <tr><td>Piaget's sensorimotor stage</td><td>Pre-Madhyamā infant cognition</td><td>Both describe a cognitive mode operating without full symbolic-linguistic structuring</td><td>Piaget treats this mode as developmentally primitive; the tradition treats its ground (Parā/Paśyantī) as permanently foundational, not outgrown</td></tr>
+    <tr><td>Vygotsky's inner speech</td><td>Madhyamā</td><td>Both describe an internal, grammatically structured, not-yet-externalised mental language</td><td>Vygotsky derives inner speech from externalised social speech (outer→inner); the tradition derives Vaikharī from Madhyamā (inner→outer)</td></tr>
+  </table>
+
+  <h3>6.4 A Worked Example: The Word "Mother" Across Three Frameworks</h3>
+  <p>The structural comparisons developed in Sections 6.1 through 6.4 can be made more
+  concrete through a single worked example, traced through Piagetian, Vygotskian, and
+  vāk-architectural frameworks in turn. Consider an eighteen-month-old child's utterance of
+  the word "mother" upon the mother's entry into a room. The three frameworks this paper has
+  been comparing offer genuinely different accounts of what has occurred, and the
+  differences are instructive for clarifying exactly what the vāk-architecture adds to, rather
+  than merely restates within, existing developmental-psychological vocabulary.</p>
+  <p>On a Piagetian reading, the utterance is the behavioural output of a sensorimotor-stage
+  cognitive achievement: the child has, over the preceding months, constructed an internal
+  schema for "mother" through repeated sensorimotor engagement (the mother's face, voice,
+  smell, characteristic patterns of touch and response), has achieved sufficient object
+  permanence to recognise the mother as a continuously existing individual across her
+  comings and goings, and has, in the period roughly coincident with this developmental
+  stage, begun acquiring the symbolic-linguistic capacity to attach a conventional verbal
+  label to this already-constructed schema. The word is, on this account, downstream of and
+  largely separate from the underlying cognitive achievement it labels; the schema could in
+  principle exist, and substantially does exist in pre-verbal infants, without the word.</p>
+  <p>On a Vygotskian reading, the same utterance reflects a more intimate, though still
+  fundamentally separate, relationship between thought and word. Vygotsky's framework would
+  emphasise that the child's use of "mother" is initially embedded in, and only gradually
+  differentiates from, the social, communicative, other-directed function of early speech —
+  the word begins as a tool for social coordination (summoning attention, requesting
+  comfort) before it stabilises into a more purely referential, conceptually precise label.
+  The internalisation Vygotsky's theory describes is still, however, a process of two
+  initially distinct streams (pre-verbal social-cognitive development and externally
+  modelled speech) progressively merging, rather than a single underlying differentiation
+  producing both.</p>
+  <p>On the vāk-architectural reading this paper has developed, the utterance is neither a
+  label attached after the fact to an independently constructed schema, nor the product of
+  two initially separate streams merging. It is the Vaikharī-level terminus of a single
+  differentiation-event whose Paśyantī-level beginning is the child's gestalt-apprehension of
+  the mother's presence — an apprehension that, on this account, need not await the
+  sensorimotor schema-construction Piaget describes nor the social-communicative scaffolding
+  Vygotsky describes, because the gestalt-apprehension of a significant presence entering a
+  shared field of awareness is, on the pratibhā doctrine examined in Section IV, available in
+  some form from the earliest moments of postnatal life — the newborn's well-documented
+  preferential orientation toward the mother's face and voice being, on this reading, an
+  early and rudimentary instance of exactly the kind of immediate, non-sequentially-constructed
+  cognition the grammatical tradition's newborn-calf example illustrates. What develops, on
+  this account, across the months leading to the eighteen-month utterance is not the
+  underlying capacity for gestalt-recognition of the mother (present, in rudimentary form,
+  from birth) but the antaḥkaraṇa's increasing capacity to differentiate that gestalt fully
+  through Madhyamā's grammatical structuring into Vaikharī's conventional verbal label — the
+  same fundamental capacity, in other words, that this paper's Section V has argued the
+  antaḥkaraṇa as a whole exists to perform, here observed in its earliest ontogenetic
+  exercise on socially and emotionally significant material.</p>
+
+  <table class="datatable">
+    <caption>The Same Utterance, Three Frameworks: What Develops Between Birth and Eighteen Months</caption>
+    <tr><th>Framework</th><th>What Pre-Exists the Utterance</th><th>What Develops</th><th>Relationship of Word to Underlying Capacity</th></tr>
+    <tr><td>Piaget</td><td>Sensorimotor schema for "mother," built through repeated embodied engagement</td><td>The schema itself, plus separately-acquired symbolic-linguistic labelling capacity</td><td>Label attached after the fact to an independently constructed cognitive achievement</td></tr>
+    <tr><td>Vygotsky</td><td>Pre-verbal social-cognitive orientation toward caregivers; externally modelled adult speech</td><td>Progressive merging of the two initially separate streams into internalised verbal thought</td><td>Two streams converging; word and thought initially independent, later fused</td></tr>
+    <tr><td>Vāk-architecture (this paper)</td><td>A rudimentary Paśyantī-level gestalt-apprehension of the mother's significant presence, available from birth via pratibhā</td><td>The antaḥkaraṇa's increasing capacity to differentiate that single gestalt fully through Madhyamā into Vaikharī's conventional label</td><td>Word is the terminal differentiation-product of the very gestalt it labels — one process, not two, and not an attachment</td></tr>
+  </table>
+
+  <p>The empirical question this comparison raises — whether infant cognition research can, in
+  principle, discriminate between these three accounts of what changes between birth and
+  eighteen months — is not one this paper resolves, and the present series does not claim
+  that existing developmental psychology has been designed with this specific theoretical
+  discrimination in mind. What the worked example does accomplish, for this paper's purposes,
+  is to show concretely what is at stake in choosing between a construction-model and a
+  differentiation-model of early cognitive-linguistic development: not merely a difference of
+  philosophical vocabulary applied after the fact to the same agreed-upon facts, but a
+  difference in what counts as the explanatorily basic starting point from which the facts
+  are to be understood.</p>
+
+  <h3>6.5 Contemplative Neuroscience: A More Recent Convergence</h3>
+  <p>A final comparative note, anticipating Part Six's fuller engagement with Yoga-śāstra and
+  contemplative neuroscience: recent decades of research on experienced meditators —
+  particularly studies of the default mode network's deactivation during sustained
+  meditative practice, already discussed in Series A's Part Three, Section 8.2, in connection
+  with ahaṃkāra-level activity — provide the closest contemporary scientific approach to an
+  empirically tractable correlate of the Parā/Paśyantī distinction this paper has developed
+  philosophically. Reports from advanced practitioners of states characterised by reduced
+  self-referential processing, diminished subject-object differentiation, and a felt sense of
+  unbounded or "non-dual" awareness bear a notable resemblance to first-person descriptions of
+  what this paper has called the recognition of Parā's continuous, ordinarily unattended-to
+  operation. The present series does not treat this resemblance as proof of the metaphysical
+  claims the Vedic tradition makes about Parā — proof of that kind is not what contemplative
+  neuroscience, as an empirical discipline, is positioned to supply — but as a further instance
+  of the pattern this section has traced throughout: independently developed inquiries into
+  the structure of awareness repeatedly converging, by different routes and with different
+  degrees of explanatory ambition, on structurally similar observations about awareness's own
+  architecture.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-6b">VI<span style="font-size:11px;">a</span>.</h1>
+  <h2 class="sectiontitle">Neuroscience of the Pre-Differentiated Field: Predictive Processing, Free Energy, and the Default Mode</h2>
+
+  <h3>6a.1 A Methodological Note, Inherited from Series A</h3>
+  <p>Series A's Part Three, Section 8.1, established a methodology this paper inherits without
+  modification: bringing neuroscience into dialogue with the Sāṃkhya-Vedāntic framework is not
+  an attempt to reduce the philosophical architecture to biological mechanism, nor an attempt
+  to claim neuroscience as covert confirmation of ancient metaphysics. The method is one of
+  structural resonance — identifying where contemporary neuroscience's most sophisticated
+  accounts of mind converge, independently and for their own empirical reasons, on structural
+  features the vāk-architecture independently identifies. The present section extends that
+  methodology from Series A's treatment of the Puruṣa–Prakṛti interface generally to this
+  paper's more specific claims about Parā, Paśyantī, and the antaḥkaraṇa's differentiating
+  function.</p>
+
+  <h3>6a.2 Predictive Processing and the Priority of the Prior</h3>
+  <p>Karl Friston's free energy principle, already introduced in Series A's Part Three,
+  Section 8.3, in connection with buddhi's adhyavasāya, proposes that perceptual experience is
+  generated top-down: the brain maintains a generative model of its environment and
+  continuously predicts incoming sensory data, with conscious perceptual content corresponding
+  not to raw sensory input but to the brain's best current model, updated by — but never
+  simply identical with — the prediction errors that sensory input generates. This account, now
+  one of the most influential frameworks in theoretical neuroscience, inverts the
+  folk-psychological picture of perception as passive reception of an external given and
+  replaces it with perception as active, prior-driven construction — a structural inversion
+  that runs strikingly parallel to this paper's own inversion (Section 1.1) of the
+  conventional psychological starting point.</p>
+  <p>The parallel can be specified more precisely using the vāk-architecture's own vocabulary.
+  Predictive processing's "prior" — the brain's existing generative model, built from a
+  lifetime of previous sensory encounters — corresponds to citta's saṃskāra-substrate (Section
+  5.3): a repository of retained impressions that conditions what content the mind is disposed
+  to register before any new sensory information arrives. Predictive processing's account of
+  perception as the model's continuous, anticipatory engagement with incoming data,
+  rather than passive registration of that data, corresponds to the antaḥkaraṇa's active
+  discriminating operation (Section 5.2): buddhi's adhyavasāya does not passively receive a
+  pre-formed percept; it actively resolves an underdetermined gestalt into a determinate
+  cognition, drawing on citta's prior conditioning to do so. The structural resonance is
+  precise enough that the present paper proposes, as a testable hypothesis for future
+  interdisciplinary work this series does not itself undertake, that the specific
+  computational architecture predictive processing models (hierarchical generative models,
+  precision-weighted prediction error, active inference) may offer a productive formal
+  vocabulary for specifying, with mechanistic precision, exactly how citta's saṃskāra-substrate
+  conditions Paśyantī's gestalt before Madhyamā's discrimination occurs — the relationship
+  Section 5a.3 examined qualitatively in connection with bhāva.</p>
+
+  <h3>6a.3 The Default Mode Network and Ahaṃkāra's Continuous Activity</h3>
+  <p>Series A's Part Three, Section 8.2, already established the default mode network's
+  association with ahaṃkāra-level, self-referential, autobiographical cognition, and its
+  characteristic deactivation during deep meditative absorption. The present paper extends
+  this established correspondence with a developmental observation: the default mode network
+  is not fully mature at birth and develops substantially across childhood and adolescence,
+  with the network's characteristic long-range functional connectivity patterns continuing to
+  strengthen into the third decade of life. This developmental trajectory offers a striking,
+  if necessarily speculative, neurological correlate to this paper's claim (Section 3.2) that
+  the capacity to register Parā and Paśyantī's continuous operation, rather than only their
+  Madhyamā/Vaikharī products, requires development built upon rather than replacing ordinary
+  cognitive maturation: an infant's relatively undeveloped default mode network may correspond,
+  however loosely, to a psychological condition in which ahaṃkāra's individuating, self-
+  referential overlay is less consolidated than it will become — not because the infant has
+  privileged contemplative access to Parā in any sense the tradition would recognise as
+  spiritual achievement, but because the very neural substrate of strong, stable
+  self-referential individuation is still under construction.</p>
+
+  <h3>6a.4 What the Neuroscience Does and Does Not Establish</h3>
+  <p>It is necessary, in keeping with the methodological caution this entire series exercises
+  (most explicitly stated in Series A's Part Two, Section 4.4, and Part Three, Section 6.1's
+  treatment of the svara/vyañjana–Puruṣa/Prakṛti parallel), to state plainly what the
+  structural resonances examined in this section do and do not establish. They do not
+  establish that Parā, in the full metaphysical sense the Vedic tradition intends — identified
+  with Brahman, the unmanifest ground of all being — is a discovery awaiting confirmation by
+  default mode network research or predictive processing models. Neuroscience, as an empirical
+  discipline concerned with measurable neural correlates of measurable cognitive and
+  behavioural phenomena, is not equipped to confirm or disconfirm metaphysical claims of that
+  scope, and this paper does not ask it to. What the structural resonances do establish, and
+  what is sufficient for this paper's psychological (rather than metaphysical) argument, is
+  that the specific claim motivating this paper's reframing of the four-vāk doctrine — that
+  ordinary cognition is differentiation from a prior unity rather than construction from prior
+  parts — is not a claim that contemporary neuroscience finds alien or incompatible with its
+  own best current models. On the contrary, predictive processing's entire framework is a
+  differentiation-model in essentially this paper's sense: perceptual content is what results
+  when a prior, holistic generative model is resolved, via prediction-error minimisation, into
+  a determinate registration of present circumstances. The convergence is, the present paper
+  submits, considerably more than coincidental, even though it falls well short of
+  metaphysical proof.</p>
+
+  <blockquote class="pull">
+    Predictive processing did not need the Ṛgveda to discover that perception begins with a
+    prior rather than a blank page. The Ṛgveda did not need predictive processing to discover
+    that three of vāk's four feet are hidden in a cave. That two inquiries, separated by three
+    thousand years and every difference of method a historian could name, arrive at structurally
+    the same starting move is not proof of anything beyond itself — but it is not nothing,
+    either.
+    <span class="attrib">Series B · Editorial Framework</span>
+  </blockquote>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-7">VII.</h1>
+  <h2 class="sectiontitle">Forward to Part Two: Śabda-Bheda as the Living Mechanism</h2>
+
+  <h3>7.1 What This Paper Has Established</h3>
+  <p>The present paper has developed four results. First, it has reframed Series A's four-vāk
+  doctrine explicitly as a psychological architecture, establishing Parā as pre-egoic
+  plenitude rather than psychological absence, and Paśyantī as the gestalt-moment of
+  apprehension prior to discriminative, individuating overlay. Second, it has shown that this
+  reframing inverts the starting assumption of conventional Western developmental psychology,
+  which takes an already-individuated subject as its ground floor; the Indian framework takes
+  individuation itself as a derivative, differentiated product of a prior, undifferentiated
+  ground. Third, it has examined pratibhā as the tradition's own phenomenological report of
+  what pre-differentiated awareness is like from the inside, anchoring the paper's more
+  abstract structural claims in a documented first-person register and in the tradition's own
+  observational evidence (the newborn calf) for cognition that precedes sequential
+  construction. Fourth, it has mapped the antaḥkaraṇa's fourfold structure onto the
+  Paśyantī-to-Madhyamā transition as psychology's first internal differentiation-product,
+  establishing citta's special role as the substrate spanning and conditioning all four
+  levels — the structural basis for Part Six's full treatment of Yoga-śāstra.</p>
+
+  <h3>7.2 What Remains: The Mechanism Itself</h3>
+  <p>What this paper has not yet done — and what Part Two undertakes in full — is specify the
+  precise mechanism by which Paśyantī's gestalt actually becomes differentiated into
+  Madhyamā's discrete structure. This paper has named the threshold (Section V) and located it
+  within the antaḥkaraṇa's operation, but it has treated the antaḥkaraṇa's fourfold
+  differentiation largely as a result to be described rather than as a process to be
+  explained. Part Two's task is to supply that explanation, through a detailed examination of
+  śabda-bheda: the grammatical tradition's own analysis of how a continuous phonetic stream is
+  divided into discrete, meaningful phonemic units, read — as this paper's Section 1.2 already
+  previewed — as the most fully documented instance of a differentiation-operation the present
+  series argues is performing the same fundamental work wherever mind divides any
+  undifferentiated field into discrete, namable, cognisable parts.</p>
+
+  <div class="context-box" id="preview-box">
+    <h3>Preview of Part Two: Śabda-Bheda and the Birth of Discrimination</h3>
+    <p>Part Two — <em>Śabda-Bheda: The Birth of Discrimination</em> — will examine the
+    Pāṇinian and Bhartṛharian analysis of phonemic differentiation in full philosophical
+    detail, drawing on Series A's Part Two treatment of the Māheśvara sūtras and Part One's
+    sphoṭa doctrine, and will extend this analysis explicitly into a general theory of
+    psychological discrimination (viveka, bheda, vibhāga) applicable beyond the linguistic
+    domain narrowly construed. Three results from the present paper feed directly into Part
+    Two's argument: first, the antaḥkaraṇa's fourfold structure (Section V) provides the
+    psychological apparatus whose discriminating function (buddhi specifically) Part Two will
+    examine as the seat of śabda-bheda's operative agency; second, the gestalt/pratibhā
+    analysis (Sections III–IV) provides the "before" state against which śabda-bheda's
+    differentiating work can be precisely specified; third, the comparative psychology
+    developed in Section VI establishes the methodological template — structural comparison
+    without claims of historical influence or perennial identity — that Part Two's
+    engagement with modern phonological and cognitive-linguistic theories of categorical
+    perception will follow.</p>
+  </div>
+
+  <blockquote class="pull">
+    The ground has now been named. What remains is to watch it divide — and to ask whether the
+    dividing, examined closely enough at the level of a single phoneme, turns out to be the
+    same operation by which a self first finds itself standing apart from a world.
+    <span class="attrib">Series B · Editorial Framework</span>
+  </blockquote>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <section id="footnotes">
+    <h2 class="sectiontitle" style="font-size:22px;">Footnotes</h2>
+    <ol class="footnotes">
+      <li><sup>1</sup> Ṛgveda I.164.45, the locus classicus of the four-vāk doctrine, cited and discussed at length in Series A, Part One, Footnote 2, citing Madeleine Biardeau, <i>Théorie de la connaissance et philosophie de la parole dans le brahmanisme classique</i> (Paris: Mouton, 1964). The "four-footed" reading is also developed in the Atharva Veda IX.10.27–28 and the Aitareya-Āraṇyaka II.3.6–8.</li>
+      <li><sup>2</sup> On Piaget's sensorimotor stage and the broader stage theory: Jean Piaget, <i>The Origins of Intelligence in Children</i>, trans. Margaret Cook (New York: International Universities Press, 1952).</li>
+      <li><sup>3</sup> On Vygotsky's account of inner speech and its developmental derivation from social speech: L. S. Vygotsky, <i>Thought and Language</i>, trans. Alex Kozulin (Cambridge, MA: MIT Press, 1986; originally published 1934).</li>
+      <li><sup>4</sup> On Bhartṛhari's pratibhā doctrine: K. A. Subramania Iyer, trans., <i>Vākyapadīya of Bhartṛhari</i>, 3 vols. (Pune: Deccan College, 1965–1973); Harold Coward, <i>The Sphoṭa Theory of Language: A Philosophical Analysis</i> (Delhi: Motilal Banarsidass, 1980).</li>
+      <li><sup>5</sup> The newborn calf example and its treatment in the grammatical-philosophical commentary tradition is discussed in K. Kunjunni Raja, <i>Indian Theories of Meaning</i> (Madras: Adyar Library, 1963), in the chapter on pratibhā and intuitive cognition.</li>
+      <li><sup>6</sup> On the antaḥkaraṇa's fourfold structure across Sāṃkhya, Yoga, and Vedānta: Gerald J. Larson and Ram Shankar Bhattacharya, eds., <i>Sāṃkhya: A Dualist Tradition in Indian Philosophy</i>, Encyclopedia of Indian Philosophies vol. IV (Princeton: Princeton University Press, 1987); see also Series A, Part Three, Section 2.1.</li>
+      <li><sup>7</sup> On gestalt psychology's foundational claims: Max Wertheimer, "Experimentelle Studien über das Sehen von Bewegung," <i>Zeitschrift für Psychologie</i> 61 (1912): 161–265; Kurt Koffka, <i>Principles of Gestalt Psychology</i> (New York: Harcourt, Brace, 1935).</li>
+      <li><sup>8</sup> William James's account of the specious present and the stream of consciousness: <i>The Principles of Psychology</i>, vol. 1 (New York: Henry Holt, 1890), chapter IX; on James's later engagement with mysticism and comparative religious experience, <i>The Varieties of Religious Experience</i> (New York: Longmans, Green, 1902).</li>
+      <li><sup>9</sup> On contemplative neuroscience and default mode network deactivation during meditation: Judson Brewer et al., "Meditation experience is associated with differences in default mode network activity and connectivity," <i>PNAS</i> 108 (2011): 20254–20259, also cited in Series A, Part Three, Footnote 5.</li>
+      <li><sup>9a</sup> On predictive processing and the free energy principle: Karl Friston, "The free-energy principle: a unified brain theory?" <i>Nature Reviews Neuroscience</i> 11 (2010): 127–138; Andy Clark, <i>Surfing Uncertainty: Prediction, Action, and the Embodied Mind</i> (Oxford: Oxford University Press, 2016); also cited in Series A, Part Three, Footnote 6.</li>
+      <li><sup>9b</sup> On default mode network development across childhood and adolescence: Damien A. Fair et al., "The maturing architecture of the brain's default network," <i>PNAS</i> 105 (2008): 4028–4032.</li>
+      <li><sup>10</sup> On the Taittirīya Upaniṣad's pañcakośa doctrine: trans. Swami Gambhirananda, in <i>Eight Upaniṣads</i>, vol. 1 (Calcutta: Advaita Ashrama, 1957); see also Series A, Part Three, Section 15.1.</li>
+      <li><sup>11</sup> Cultural Musings, <i>Series A: The Advent of Language in Itself (Part One) through Vāk Returning to Itself (Part Six)</i>, available at shastrasextentionvak.culturalmusings.com and successor subdomains.</li>
+    </ol>
+  </section>
+
+  <div class="divider-orn">★</div>
+
+  <section id="bibliography">
+    <h2 class="sectiontitle" style="font-size:22px;">Bibliography</h2>
+    <h4 style="color:var(--ink-dim);text-transform:uppercase;letter-spacing:.06em;font-size:14px;">Primary Sources — Classical Indian Texts</h4>
+    <p class="dim" style="font-size:14.5px;">Bhartṛhari. <i>Vākyapadīya.</i> Trans. K. A. Subramania Iyer, 3 vols. Pune: Deccan College, 1965–1973.<br>
+    Patañjali (the Grammarian). <i>Mahābhāṣya.</i> Ed. F. Kielhorn, 3 vols. Bombay: Government Central Book Depot, 1880–1885.<br>
+    Īśvarakṛṣṇa. <i>Sāṃkhyakārikā.</i> Trans. Gerald J. Larson, in <i>Classical Sāṃkhya</i>. Delhi: Motilal Banarsidass, 1979.<br>
+    <i>Taittirīya Upaniṣad.</i> Trans. Swami Gambhirananda, in <i>Eight Upaniṣads</i>, vol. 1. Calcutta: Advaita Ashrama, 1957.<br>
+    <i>Ṛgveda Saṃhitā.</i> Trans. Stephanie W. Jamison and Joel P. Brereton, <i>The Rigveda: The Earliest Religious Poetry of India</i>. Oxford: Oxford University Press, 2014.</p>
+
+    <h4 style="color:var(--ink-dim);text-transform:uppercase;letter-spacing:.06em;font-size:14px;margin-top:24px;">Secondary Sources — Indian Philosophy and Linguistics</h4>
+    <p class="dim" style="font-size:14.5px;">Coward, Harold. <i>The Sphoṭa Theory of Language: A Philosophical Analysis.</i> Delhi: Motilal Banarsidass, 1980.<br>
+    Coward, Harold, and K. Kunjunni Raja, eds. <i>The Philosophy of the Grammarians.</i> Encyclopedia of Indian Philosophies, vol. V. Princeton: Princeton University Press, 1990.<br>
+    Larson, Gerald J., and Ram Shankar Bhattacharya, eds. <i>Sāṃkhya: A Dualist Tradition in Indian Philosophy.</i> Encyclopedia of Indian Philosophies, vol. IV. Princeton: Princeton University Press, 1987.<br>
+    Raja, K. Kunjunni. <i>Indian Theories of Meaning.</i> Madras: Adyar Library, 1963.<br>
+    Biardeau, Madeleine. <i>Théorie de la connaissance et philosophie de la parole dans le brahmanisme classique.</i> Paris: Mouton, 1964.</p>
+
+    <h4 style="color:var(--ink-dim);text-transform:uppercase;letter-spacing:.06em;font-size:14px;margin-top:24px;">Secondary Sources — Western Psychology</h4>
+    <p class="dim" style="font-size:14.5px;">James, William. <i>The Principles of Psychology.</i> 2 vols. New York: Henry Holt, 1890.<br>
+    James, William. <i>The Varieties of Religious Experience.</i> New York: Longmans, Green, 1902.<br>
+    Piaget, Jean. <i>The Origins of Intelligence in Children.</i> Trans. Margaret Cook. New York: International Universities Press, 1952.<br>
+    Vygotsky, L. S. <i>Thought and Language.</i> Trans. Alex Kozulin. Cambridge, MA: MIT Press, 1986.<br>
+    Koffka, Kurt. <i>Principles of Gestalt Psychology.</i> New York: Harcourt, Brace, 1935.<br>
+    Brewer, Judson A., et al. "Meditation experience is associated with differences in default mode network activity and connectivity." <i>Proceedings of the National Academy of Sciences</i> 108 (2011): 20254–20259.<br>
+    Friston, Karl. "The free-energy principle: a unified brain theory?" <i>Nature Reviews Neuroscience</i> 11 (2010): 127–138.<br>
+    Clark, Andy. <i>Surfing Uncertainty: Prediction, Action, and the Embodied Mind.</i> Oxford: Oxford University Press, 2016.<br>
+    Fair, Damien A., et al. "The maturing architecture of the brain's default network." <i>Proceedings of the National Academy of Sciences</i> 105 (2008): 4028–4032.</p>
+
+    <h4 style="color:var(--ink-dim);text-transform:uppercase;letter-spacing:.06em;font-size:14px;margin-top:24px;">Predecessor and Series Context</h4>
+    <p class="dim" style="font-size:14.5px;">Cultural Musings. <i>Series A, Part One: The Advent of Language in Itself.</i> shastrasextentionvak.culturalmusings.com.<br>
+    Cultural Musings. <i>Series A, Part Three: Prakṛti–Puruṣa as Living Interface (Extended Edition).</i> shastrasextentionvaktwo.culturalmusings.com.<br>
+    Cultural Musings. <i>Series A, Part Five: The Bhāṣya Tradition as Lineage.</i> shastrasextentionvakfour.culturalmusings.com.<br>
+    Cultural Musings. <i>Shastrasfourteen: Grand Final Synthesis — Sāṃkhya-Yoga and the Computational Puruṣa.</i> shastrasfourteen.culturalmusings.com.</p>
+  </section>
+
+  <div class="divider-orn">☆</div>
+
+  <section id="glossary">
+    <h2 class="sectiontitle" style="font-size:22px;">Glossary</h2>
+    <p class="dim" style="font-size:14.5px;">This glossary collects the Sanskrit technical terms introduced or extended in the present paper. Terms already fully developed in Series A are cross-referenced rather than re-defined in full.</p>
+    <dl class="glossary">
+      <dt><span class="glossterm">परा वाक्</span> parā vāk</dt>
+      <dd>Pre-egoic plenitude; awareness prior to any subject-object differentiation. See Series A, Part One, Section III; psychologically extended in this paper's Section 2.2.</dd>
+      <dt><span class="glossterm">पश्यन्ती वाक्</span> paśyantī vāk</dt>
+      <dd>The gestalt moment of apprehension, whole and undivided, prior to sequential parsing. See Section 2.1 and Section III of this paper.</dd>
+      <dt><span class="glossterm">प्रतिभा</span> pratibhā</dt>
+      <dd>Bhartṛhari's term for intuitive, non-sequential cognitive flash; the phenomenological register of Paśyantī. See Section IV.</dd>
+      <dt><span class="glossterm">अन्तःकरण</span> antaḥkaraṇa</dt>
+      <dd>The fourfold inner instrument: manas, buddhi, ahaṃkāra, citta. Examined as vāk's first internal differentiation-product in Section V.</dd>
+      <dt><span class="glossterm">शब्दभेद</span> śabda-bheda</dt>
+      <dd>Sound-differentiation; the division of a continuous phonetic stream into discrete phonemic units. Introduced in Section 1.2 as this series' organising mechanism; developed fully in Part Two.</dd>
+      <dt><span class="glossterm">अध्यवसाय</span> adhyavasāya</dt>
+      <dd>Buddhi's determinate, discriminative cognitive act. See Series A, Part Three, Section 5.1; revisited in this paper's Section 3.3.</dd>
+      <dt><span class="glossterm">संस्कार</span> saṃskāra</dt>
+      <dd>Latent impression retained in citta, conditioning future cognition. See Section 5.3; developed fully in Part Six.</dd>
+    </dl>
+  </section>
+
+  <div class="divider-orn">↗</div>
+
+  <section class="preview-box">
+    <h3>Series B: Complete Part Map (Repeated for Reference)</h3>
+    <table class="partmap">
+      <tr><th>Part</th><th>Title</th><th>Psychological Stage</th></tr>
+      <tr><td class="this-paper">I</td><td class="this-paper">Vāk as the Ground of Psychological Awareness</td><td class="this-paper">This Paper</td></tr>
+      <tr><td>II</td><td>Śabda-Bheda: The Birth of Discrimination</td><td>Differentiation / discernment</td></tr>
+      <tr><td>III</td><td>Sāma Veda and the Birth of Affect</td><td>Feeling-toned cognition</td></tr>
+      <tr><td>IV</td><td>Nāṭyaśāstra I: Rasa and the Architecture of Emotion</td><td>Aesthetic embodiment</td></tr>
+      <tr><td>V</td><td>Nāṭyaśāstra II: Abhinaya and Embodied Expression</td><td>Somatic cognition</td></tr>
+      <tr><td>VI</td><td>Yoga-Śāstra: Citta-Vṛtti and Disciplined Attention</td><td>Self-regulation / will</td></tr>
+      <tr><td>VII</td><td>Proliferation of Śāstra I: Vyākaraṇa, Nyāya</td><td>Specialised cognition</td></tr>
+      <tr><td>VIII</td><td>Proliferation of Śāstra II: Arthaśāstra, Āyurveda</td><td>Social/embodied extension</td></tr>
+      <tr><td>IX</td><td>Mantra-Śāstra: Vāk Returning as Sound-Technology</td><td>Recursive self-application</td></tr>
+      <tr><td>X</td><td>Case Studies in Śabda-to-Śāstra Transmission</td><td>Applied/historical synthesis</td></tr>
+      <tr><td>XI</td><td>Dharma and Adharma: The Convergent Psychology of Order</td><td>Ethical-metaphysical synthesis</td></tr>
+      <tr><td>XII</td><td>Pratiprasava: Vāk's Return and the Handoff Beyond</td><td>Closing return</td></tr>
+    </table>
+  </section>
+
+</main>
+
+<footer class="papertail">
+  <div class="om">ॐ तत् सत्</div>
+  <div class="omtatsat">om tat sat — That is Truth</div>
+  <div class="stamp">
+    <b>Series B · Part One</b> · Vāk as the Ground of Psychological Awareness<br>
+    Cultural Musings · Vedic &amp; Śāstric Research Platform<br>
+    Predecessor: Series A · The Advent of Language in Itself · shastrasextentionvak.culturalmusings.com
+  </div>
+</footer>
+
+</body>
+</html>
